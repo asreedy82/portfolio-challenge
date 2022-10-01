@@ -1,0 +1,84 @@
+
+:root {
+    --main-bg-color: rgba(255, 255, 255, 0.768);
+}
+
+* {
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: rgb(145, 145, 206);
+    display: flex;
+    flex-direction: row;
+    border: 3px solid black;
+    padding: 3%;
+}
+
+.name-header {
+    color: white;
+    width: 60%;
+    border: 3px solid black;
+    text-align: left;
+}
+
+header nav {
+    color: rgb(214, 210, 210);
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 40%;
+    width: 30%;
+    justify-content: right;
+    border: 3px solid black;
+}
+
+header nav li {
+    display: inline-block;
+    margin-left: 5px;
+    border: 3px solid black;
+}
+
+.random-box {
+    display: flex;
+    height: 600px;
+    border: 3px solid black;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 3px solid black;
+    padding: 3%;
+}
+
+
+aside {
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+.section-about {
+    border: 3px solid black;
+}
+
+.section-contact {
+    border: 3px solid black;
+    padding: 2%;
+    text-align: center;
+}
+
+.section-apps {
+    border: 3px solid black;
+    width: 62%;
+    flex: 1 1 62%;
+    justify-content: right;
+}
