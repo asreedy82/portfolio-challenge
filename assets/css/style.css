@@ -7,12 +7,14 @@
     font-family: Helvetica, sans-serif;
 }
 
+/*establishing overall format of a column*/
 body {
     background-color: var(--main-bg-color);
     display: flex;
     flex-direction: column;
 }
 
+/*Header section will be flexible with name on the left and nav items on the right*/
 header {
     background-color: var(--main-bg-color);
     display: flex;
@@ -21,6 +23,7 @@ header {
     padding: 3%;
 }
 
+/* my name large on the left side*/
 .name-header {
     color: white;
     width: 60%;
@@ -28,6 +31,7 @@ header {
     text-align: left;
 }
 
+/*3 main navigation links, about me, contact info and applications*/
 header nav {
     display: flex;
     flex-direction: row;
@@ -37,30 +41,34 @@ header nav {
     /* border: 3px solid black; */
 }
 
+/*making nav links in a line*/
 header nav li {
     display: inline-block;
     margin-left: 5px;
     /* border: 3px solid black; */
 }
 
+/*giving nav links their own color and removing underlining*/
 header nav a {
     color: rgb(214, 210, 210);
     text-decoration: none;
 }
 
-
+/*creating a container for some artwork*/
 .artsy-box {
     display: block;
     height: 400px;
     /* border: 3px solid black; */
 }
 
+/*image for artwork container, had to limit it to not take up too much space and prevent from looking distorted*/
 .artsy-box img {
     width: 100%;
     height: 400px;
     object-fit: cover;
 }
 
+/*The rest of the page below the header and art box*/
 main {
     display: flex;
     flex-direction: row;
@@ -69,6 +77,7 @@ main {
 }
 
 
+/*Column for About Me and Contact Info sections*/
 aside {
     /* border: 3px solid black; */
     display: flex;
@@ -76,6 +85,7 @@ aside {
     width: 35%;
 }
 
+/*Column for my photo and text underneath*/
 .section-about {
     /* border: 3px solid black; */
     display: flex;
@@ -83,6 +93,7 @@ aside {
     position: relative;
 }
 
+/*Div for the paragraph about me with centered text*/
 .section-about div {
     padding: 1%;
     display: flex;
@@ -90,22 +101,25 @@ aside {
     text-align: center;
 }
 
+/*Giving a label to About Me and have it fit in the container*/
 .section-about h3 {
     color: white;
     position: absolute;
-    top: -3%;
+    top: -2%;
     background-color: var(--main-bg-color);
     padding: 2%;
 }
 
+/*Contact info area with different background color to stand out more*/
 .section-contact {
     /* border: 3px solid black; */
-    padding: 0%;
     text-align: center;
     position: relative;
     background-color: rgb(214, 210, 210);
+    padding-bottom: 2%;
 }
 
+/*Label for Contact Info section to fit in the container*/
 .section-contact h3 {
     color: white;
     position: absolute;
@@ -114,6 +128,7 @@ aside {
     padding: 2%;
 }
 
+/*Container for the application section, using flex row to have first application be larger*/
 .section-apps {
     /* border: 3px solid black; */
     width: 62%;
@@ -124,6 +139,7 @@ aside {
     flex-wrap: wrap;
 }
 
+/*First app, takes up entire width*/
 .app-1 {
     /* border: 3px solid black; */
     width: 100%;
@@ -131,6 +147,7 @@ aside {
     position: relative;
 }
 
+/*Label that fits on top of image*/
 .app-1 h3 {
     color: white;
     position: absolute;
@@ -139,6 +156,8 @@ aside {
     padding: 2%;
 }
 
+
+/*Second app that fits with 3rd app on same row*/
 .app-2 {
     /* border: 3px solid black; */
     width: 47%;
@@ -146,19 +165,17 @@ aside {
     position: relative;
 }
 
-.app-2 a {
-    padding: 0%;
-    position: relative;
-}
 
-.app-2 a h3 {
+/*Label for 2nd app that is top left and over the image*/
+.app-2 h3 {
     color: white;
     position: absolute;
-    top: -8%;
+    top: -6%;
     background-color: var(--main-bg-color);
     padding: 2%;
 }
 
+/*Third app that fits with 3rd app on same row*/
 .app-3 {
     /* border: 3px solid black; */
     width: 47%;
@@ -166,15 +183,11 @@ aside {
     position: relative;
 }
 
-.app-3 a {
-    padding: 0%;
-    position: relative;
-}
-
-.app-3 a h3 {
+/*Label for 3rd app that is top left and over the image*/
+.app-3 h3 {
     color: white;
     position: absolute;
-    top: -8%;
+    top: -6%;
     background-color: var(--main-bg-color);
     padding: 2%;
 }
