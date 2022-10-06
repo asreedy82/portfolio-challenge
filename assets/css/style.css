@@ -29,13 +29,14 @@ header {
     width: 60%;
     /* border: 3px solid black; */
     text-align: left;
+    flex: 1 1 50%;
 }
 
 /*3 main navigation links, about me, contact info and applications*/
 header nav {
     display: flex;
     flex-direction: row;
-    flex: 1 1 40%;
+    flex: 1 1 50%;
     width: 30%;
     justify-content: right;
     /* border: 3px solid black; */
@@ -73,7 +74,8 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* border: 3px solid black; */
+    /* flex-wrap: wrap;
+    border: 3px solid black; */
 }
 
 
@@ -190,4 +192,53 @@ aside {
     top: -6%;
     background-color: var(--main-bg-color);
     padding: 2%;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    .section-about {
+        margin-bottom: 3%;
+        width: 100%;
+    }
+
+    .section-about h3 {
+        top: -3%;
+    }
+
+    .section-contact {
+        padding-top: 5%;
+        padding-bottom: 7%;
+        margin-bottom: 6%;
+        width: 100%;
+    }
+
+    .section-contact h3 {
+        top: -9%;
+    }
+
+    .section-apps {
+        width: 100%;
+    }
+
+    .app-1 h3 {
+        top: -8%;
+    }
+
+    .app-2 h3 {
+        top: -13%;
+    }
+
+    .app-3 h3 {
+        top: -13%;
+    }
+
 }
