@@ -194,6 +194,8 @@ aside {
     padding: 2%;
 }
 
+/* including media query to readjust layout for smaller screens
+stacking containers in a column and maxing width*/
 @media screen and (max-width: 768px) {
     main {
         display: flex;
