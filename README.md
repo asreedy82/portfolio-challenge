@@ -14,6 +14,7 @@ N/A
 
 The webpage is intended to help me market myself to potential employers. It will ultimately give me a place to highlight my work and provide means for potential employers to get in contact with me.
 
+![Screen shot of main section of website](assets/images/portfolio-challenge-screenshot.png)
 
 ## Credits
 
